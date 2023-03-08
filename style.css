@@ -1,0 +1,142 @@
+*{
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: gray;
+}
+.div{
+    background-color: black;
+    width: 80%;
+    height: 500px;
+    border: red solid 10px;
+    margin: 2% 0 10% 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* 50%-50% */
+.first{
+    width: 50%;
+    height: 300px;
+}
+.firstOne{
+    background-color:   yellow;
+}
+.firstTwo{
+    background-color: green;
+}
+
+/* 20%-60%-20% */
+.secondOne{
+    width: 20%;
+    height: 300px;
+    background-color: aqua;
+}
+.secondTwo{
+    width: 60%;
+    height: 300px;
+    background-color: bisque;
+}
+.secondThree{
+    width: 20%;
+    height: 300px;
+    background-color: blueviolet;
+}
+
+/* 50%-50% => 80%-20% */
+.thirdOne{
+    width: 50%;
+    height: 300px;
+    background-color: grey;
+    /* Transition */
+    transition: all ease 2s;
+}
+.thirdOne:hover{
+    width: 80%;
+}
+.thirdTwo{
+    width: 50%;
+    height: 300px;
+    background-color: antiquewhite;
+}
+
+/* square to circle */
+.stoc{
+    width: 100px;
+    height: 100px;
+    background-color: gray;
+    /* 
+    You can also use it: 
+    transition: background-color 2s, border-radius 2s;
+    */
+    transition: all ease 2s;
+    margin: 2% 0 10% 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.stoc h1{
+    display: none;
+    transition: all ease 2s;
+}
+.stoc:hover{
+    border-radius: 50%;
+    background-color: black;
+    height: 100px;
+    width: 100px;
+}
+.stoc:hover h1{
+    color: aliceblue;
+    display: contents;
+}
+.stoc:hover p{
+    display: none;
+}
+/* transform */
+.transform{
+    height: 200px;
+    width: 200px;
+    margin: 2% 0 10% 0;
+    background-color: black;
+    transition: all ease 2s;
+}
+/* skew */
+.skew:hover{
+    border-top: solid 10px red;
+    transform: skew(-30deg);
+}
+/* scale */
+/* You can use x and y */
+.scale:hover{
+    transform: scale(50%);
+}
+/* translate */
+.translateX:hover{
+    transform: translateX(-100px);
+}
+.translateY:hover{
+    transform: translateY(100px);
+}
+.translate:hover{
+    transform: translate(-100px,30px);
+}
+/* rotate */
+.rotateX:hover{
+    border-top: solid 15px red;
+    transform: rotateX(50deg);
+}
+.rotateY:hover{
+    border-top: solid 15px red;
+    transform: rotateY(30deg);
+}
+.rotate:hover{
+    border-top: solid 15px red;
+    transform: rotate(180deg);
+}
